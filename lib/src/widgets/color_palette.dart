@@ -5,7 +5,7 @@ class ColorPalette extends StatelessWidget {
 
   final DrawableController controller;
 
-  ColorPalette({required this.controller});
+  ColorPalette({super.key, required this.controller});
 
   final List<Color> colors = [
     Colors.black,

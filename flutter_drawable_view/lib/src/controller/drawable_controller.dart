@@ -19,21 +19,17 @@ class DrawableController extends ChangeNotifier {
     drawMode = mode;
     notifyListeners();
   }
-
   void setColor(Color color){
     selectedColor = color;
     notifyListeners();
   }
-
   void setStroke(double value){
     strokeWidth = value;
     notifyListeners();
   }
-
   void startDrawing(Offset point){
     undoStack.clear();
     startPoint = point;
-
     elements.add(
       DrawableElement(
         points: [point],
@@ -44,7 +40,6 @@ class DrawableController extends ChangeNotifier {
     );
     notifyListeners();
   }
-
   void updateDrawing(Offset point){
     if(elements.isEmpty) return;
 
@@ -56,25 +51,21 @@ class DrawableController extends ChangeNotifier {
 
     notifyListeners();
   }
-
   void endDrawing(){
     notifyListeners();
   }
-
   void undo(){
     if(elements.isNotEmpty){
       undoStack.add(elements.removeLast());
       notifyListeners();
     }
   }
-
   void redo(){
     if(undoStack.isNotEmpty){
       elements.add(undoStack.removeLast());
       notifyListeners();
     }
   }
-
   void clear(){
     elements.clear();
     undoStack.clear();
