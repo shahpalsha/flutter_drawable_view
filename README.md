@@ -1,17 +1,149 @@
-# flutter_drawable_view
+# 🎯flutter_drawable_view
+```
+flutter_drawable_view is a powerful and lightweight drawing canvas library for Flutter that allows developers to easily implement freehand drawing functionality inside their applications.
 
-A new Flutter project.
+It helps developers build signature pads, sketch boards, whiteboards, note-taking apps, annotation tools and creative drawing editors without writing complex gesture detection or custom painter logic.
 
-## Getting Started
+The library provides smooth drawing experience, brush color control, stroke width adjustment, eraser support, undo/redo functionality and canvas clearing with a simple reusable controller-based architecture.
 
-This project is a starting point for a Flutter application.
+Developers can quickly integrate modern drawing UI features for Android, iOS, Web and Desktop applications using an easy and flexible API.
+```
 
-A few resources to get you started if this is your first Flutter project:
+----
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## ✨ Features
+```
+- ✏️ Smooth freehand drawing
+- 🎨 Brush color selection
+- 📏 Stroke width control
+- 🧽 Eraser tool support
+- ↩️ Undo / Redo drawing
+- 🗑 Clear canvas
+- 🎯 Controller based drawing architecture
+- ⚡ High performance CustomPainter rendering
+- 📦 Lightweight and reusable library
+- 🌐 Supports Android, iOS, Web & Desktop
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+----
+
+## 📦 Installation
+
+Add dependency in your pubspec.yaml
+```
+yaml
+dependencies:
+  flutter_drawable_view:
+    path: 
+```
+Then run:
+```
+flutter pub get
+```
+
+----
+
+## 🎬 Preview
+
+https://github.com/user-attachments/assets/221921df-e2fa-4af4-ae37-89c1006396f8
+
+----
+
+## 🗂 File Structure
+```
+flutter_drawable_view/
+│
+├─ lib/
+│   ├─ flutter_drawable_view.dart
+│   │   // Main library export file
+│   │
+│   └─ main.dart
+│   │  // Demo drawing application
+│   │  
+│   └─ src/
+│       ├─ drawable_controller.dart
+│       │   // Drawing state & logic
+│       │
+│       ├─ drawable_painter.dart
+│       │   // Canvas rendering engine
+│       │
+│       ├─ drawable_model.dart
+│       │   // Drawing line model
+│       │
+│       └─ drawable_view.dart
+│           // Drawing canvas widget
+│
+│
+├─ README.md
+│   // Package documentation
+│
+├─ LICENSE
+│   // Open source license
+│
+└─ pubspec.yaml
+    // Package configuration file
+```
+
+----
+
+## 🚀 How To Use
+
+1️⃣ Import Package
+```
+import 'package:flutter_drawable_view/flutter_drawable_view.dart';
+```
+2️⃣ Create Controller
+```
+DrawableController controller = DrawableController();
+```
+3️⃣ Add Drawing Canvas
+```
+Expanded(
+  child: DrawableView(controller: controller),
+)
+```
+4️⃣ Change Brush Color
+```
+controller.setColor(Colors.blue);
+```
+5️⃣ Enable Eraser
+```
+controller.enableEraser();
+```
+6️⃣ Stroke Width
+```
+controller.setStroke(8);
+```
+7️⃣ Undo / Redo / Clear
+```
+controller.undo();
+controller.redo();
+controller.clear();
+```
+-
+----
+
+## 🎨 Drawing Properties
+
+| Feature          | Description          |
+| ---------------- | -------------------- |
+| Freehand Drawing | Smooth touch drawing |
+| Color Control    | Change brush color   |
+| Stroke Width     | Adjust thickness     |
+| Eraser           | Remove drawing       |
+| Undo/Redo        | Drawing history      |
+| Clear Canvas     | Reset drawing        |
+
+----
+
+## 📄 MIT License
+```
+Copyright (c) 2026
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files to deal in the Software without restriction.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
+```
+
+
