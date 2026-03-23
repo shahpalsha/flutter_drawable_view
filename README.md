@@ -34,7 +34,7 @@ Add dependency in your pubspec.yaml
 yaml
 dependencies:
   flutter_drawable_view:
-    path: 
+    path: https://github.com/Excelsior-Technologies-Community/flutter_drawable_view/tree/stage
 ```
 Then run:
 ```
@@ -120,7 +120,7 @@ controller.undo();
 controller.redo();
 controller.clear();
 ```
--
+
 ----
 
 ## 🎨 Drawing Properties
