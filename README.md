@@ -57,7 +57,7 @@ flutter_drawable_view/
 │   ├─ flutter_drawable_view.dart
 │   │   // Main library export file
 │   │
-│   └─ main.dart
+│   ├─ main.dart
 │   │  // Demo drawing application
 │   │  
 │   └─ src/
